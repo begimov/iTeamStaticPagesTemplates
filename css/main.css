@@ -1,6 +1,9 @@
 .row {
     margin: 0px;
 }
+.block {
+    margin-top: 50px;
+}
 .block-mp {
     margin-top: -50px;
     padding-top: 100px;
