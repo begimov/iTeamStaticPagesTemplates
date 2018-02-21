@@ -30,3 +30,7 @@ a, a:hover {
     background-image: url('../img/promo_bg.jpg');
     background-size: cover;
 }
+.rm {
+    background-image: url('../img/rm_bg.jpg');
+    background-size: cover;
+}
