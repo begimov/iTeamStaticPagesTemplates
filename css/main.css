@@ -4,7 +4,7 @@ body {
     color: #333333;
 }
 /* MODS */
-a {
+a, a:hover {
     color: #870101;
 }
 .bg-dark {
@@ -26,3 +26,7 @@ a {
     margin: 0px;
 }
 /* CUSTOM */
+.promo {
+    background-image: url('../img/promo_bg.jpg');
+    background-size: cover;
+}
