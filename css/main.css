@@ -13,22 +13,10 @@ body {
 .btn-danger {
     border-color: #870101;
 }
+.text-danger {
+    color: #870101 !important;
+}
 .row {
     margin: 0px;
 }
 /* CUSTOM */
-.text-branded {
-    color: #870101;
-}
-.block {
-    margin-top: 50px;
-}
-.block-mp {
-    margin-top: -50px;
-    padding-top: 100px;
-}
-.block-mk {
-    margin-top: -50px;
-    padding-top: 100px;
-    z-index: auto;
-}
