@@ -7,13 +7,13 @@ body {
 .bg-dark {
     background-color: #333333 !important;
 }
-.bg-danger, .btn-danger {
+.bg-primary, .btn-primary {
     background-color: #870101 !important;
 }
-.btn-danger {
+.btn-primary {
     border-color: #870101;
 }
-.text-danger {
+.text-primary {
     color: #870101 !important;
 }
 .row {
