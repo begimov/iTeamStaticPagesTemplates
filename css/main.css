@@ -25,6 +25,9 @@ a, a:hover {
 .row {
     margin: 0px;
 }
+.row:before, row:after {
+    display: none;
+}
 /* CUSTOM */
 .promo {
     background-image: url('../img/promo_bg.jpg');
@@ -45,4 +48,9 @@ a, a:hover {
 .video-3 {
     background-image: url('../img/promo_bg.jpg');
     background-size: cover;
+}
+
+.block-footer a {
+    color: #fff;
+    text-decoration: underline;
 }
