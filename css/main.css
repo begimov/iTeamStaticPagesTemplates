@@ -28,6 +28,9 @@ a, a:hover {
 .row:before, row:after {
     display: none;
 }
+.navbar {
+    height: 50px;
+}
 /* CUSTOM */
 .promo {
     background-image: url('../img/promo_bg.jpg');
