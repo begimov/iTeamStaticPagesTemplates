@@ -64,3 +64,7 @@ a, a:hover {
     background-image: url('../img_services/mission_bg.jpg');
     background-size: cover;
 }
+.services-01 {
+    background-image: url('../img_services/services_01_img.jpg');
+    background-size: cover;
+}
