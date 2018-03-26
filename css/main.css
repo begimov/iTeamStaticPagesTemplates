@@ -11,7 +11,7 @@ a, a:hover {
 .bg-dark {
     background-color: #333333 !important;
 }
-.bg-primary, .btn-primary {
+.bg-primary, .btn-primary, .badge-primary {
     background-color: #870101 !important;
 }
 .btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary{
