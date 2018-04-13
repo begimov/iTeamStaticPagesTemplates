@@ -102,6 +102,15 @@ a, a:hover {
     background-image: url('../img_rm_0/top_bg.jpg');
     background-size: cover;
 }
+.pilotage-block {
+    background-image: url('../img_rm_0/pilotage_bg.jpg');
+    background-size: cover;
+}
+.howto-block {
+    background-image: url('../img_rm_0/howto_bg.jpg');
+    background-size: cover;
+    margin-bottom: -48px;
+}
 .bg-01 {
     background-image: url('../img_rm_0/01_bg.jpg');
     background-size: cover;
