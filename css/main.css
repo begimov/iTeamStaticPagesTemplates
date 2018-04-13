@@ -70,3 +70,7 @@ a, a:hover {
 }
 
 /* RM_0 */
+.block-subnav a {
+    color: #fff;
+    text-decoration: underline;
+}
