@@ -204,3 +204,11 @@ a, a:hover {
     background-image: url('../img_rm_3/06_bg.jpg');
     background-size: cover;
 }
+.bg-rm-3-01 {
+    background-image: url('../img_rm_3/01_bg.jpg');
+    background-size: cover;
+}
+.bg-rm-3-02 {
+    background-image: url('../img_rm_3/02_bg.jpg');
+    background-size: cover;
+}
