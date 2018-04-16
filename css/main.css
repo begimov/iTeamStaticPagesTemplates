@@ -109,7 +109,6 @@ a, a:hover {
 .howto-block {
     background-image: url('../img_rm_0/howto_bg.jpg');
     background-size: cover;
-    margin-bottom: -48px;
 }
 .bg-01 {
     background-image: url('../img_rm_0/01_bg.jpg');
@@ -167,6 +166,10 @@ a, a:hover {
 }
 .bg-rm-1-08 {
     background-image: url('../img_rm_1/08_bg.jpg');
+    background-size: cover;
+}
+.bg-rm-1-09 {
+    background-image: url('../img_rm_1/09_bg.jpg');
     background-size: cover;
 }
 
