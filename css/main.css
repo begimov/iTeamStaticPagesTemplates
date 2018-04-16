@@ -153,3 +153,19 @@ a, a:hover {
     background-image: url('../img_rm_1/02_bg.jpg');
     background-size: cover;
 }
+.bg-rm-1-03 {
+    background-image: url('../img_rm_1/03_bg.jpg');
+    background-size: cover;
+}
+.bg-rm-1-04 {
+    background-image: url('../img_rm_1/04_bg.jpg');
+    background-size: cover;
+}
+.bg-rm-1-05 {
+    background-image: url('../img_rm_1/05_bg.jpg');
+    background-size: cover;
+}
+.bg-rm-1-08 {
+    background-image: url('../img_rm_1/08_bg.jpg');
+    background-size: cover;
+}
