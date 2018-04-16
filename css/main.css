@@ -195,3 +195,9 @@ a, a:hover {
     background-image: url('../img_rm_2/06_bg.jpg');
     background-size: cover;
 }
+
+/* RM_3 */
+.bg-rm-3-06 {
+    background-image: url('../img_rm_3/06_bg.jpg');
+    background-size: cover;
+}
