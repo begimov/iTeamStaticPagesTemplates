@@ -169,3 +169,29 @@ a, a:hover {
     background-image: url('../img_rm_1/08_bg.jpg');
     background-size: cover;
 }
+
+/* RM_2 */
+.bg-rm-2-01 {
+    background-image: url('../img_rm_2/01_bg.jpg');
+    background-size: cover;
+}
+.bg-rm-2-02 {
+    background-image: url('../img_rm_2/02_bg.jpg');
+    background-size: cover;
+}
+.bg-rm-2-03 {
+    background-image: url('../img_rm_2/03_bg.jpg');
+    background-size: cover;
+}
+.bg-rm-2-04 {
+    background-image: url('../img_rm_2/04_bg.jpg');
+    background-size: cover;
+}
+.bg-rm-2-05 {
+    background-image: url('../img_rm_2/05_bg.jpg');
+    background-size: cover;
+}
+.bg-rm-2-06 {
+    background-image: url('../img_rm_2/06_bg.jpg');
+    background-size: cover;
+}
