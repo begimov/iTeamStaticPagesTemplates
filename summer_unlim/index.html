@@ -12,12 +12,29 @@
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>База знаний Русский менеджмент 2018</title>
 
     <style>
         h1, h2, h3, .text-accent {
             font-family: 'Noto Serif', serif;
+        }
+        .countdown {
+            font-size: 1.8em;
+            padding: 10px;
+            color: #fff;
+            box-shadow: 0px 2px rgb(255, 248, 183);
+            background: rgb(90, 36, 0);
+            /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(rgb(196, 95, 0), #ffae00);
+            /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(rgb(196, 95, 0), #ffae00);
+            /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(rgb(196, 95, 0), #ffae00);
+            /* For Firefox 3.6 to 15 */
+            background: linear-gradient(rgb(196, 95, 0), #ffae00);
+            /* Standard syntax */
         }
     </style>
 </head>
@@ -26,13 +43,13 @@
     <div class="jumbotron text-center bg-dark text-light" style="background-image: url('img/bg_top.jpg');background-size: cover;">
         <a href="https://iteam.ru/" target="_blank"><img src="img/top_logo.png" class="img-fluid"></a>
         <p class="mt-3 mb-5">МАСТЕРСКАЯ УПРАВЛЕНИЯ<br>КОНСУЛЬТИРУЕМ И ОБУЧАЕМ СОБСТВЕННИКОВ И ТОП-МЕНЕДЖЕРОВ УПРАВЛЯТЬ КОМПАНИЕЙ</p>
-        <h1 class="display-4">База знаний Русский менеджмент 2018</h1>
+        <h1 class="display-4">База знаний &laquo;Русский менеджмент 2018&raquo;</h1>
         <h3>29 мастер-классов, 70+ часов обучающего видео</h3>
         <hr class="my-4" style="background-color:#555;">
         <a class="btn btn-danger btn-lg font-weight-bold" href="#" role="button">СДЕЛАТЬ ЗАКАЗ</a>
         <h3 class="mt-4">Самые нужные мастер-классы в одной библиотеке<br>Горячие цены для самых быстрых:</h3>
-        <a class="btn btn-warning btn-lg font-weight-bold mt-3" href="#" role="button">СЧЕТЧИК (до 30 июля 2018 года)</a>
-        <h1><span class="badge badge-primary mt-3">40&thinsp;000~</span></h1>
+        <div id="countdown1" class="my-4 font-weight-bold"></div>
+        <h1><span class="badge badge-primary">40&thinsp;000~</span></h1>
     </div>
 
     <div class="container-fluid">
@@ -46,25 +63,25 @@
             </div>
             <div class="row mt-4">
                 <div class="col">
-                    <img src="img/icon.png" class="img-fluid mb-2">
+                    <i class="material-icons md-48 font-weight-bold text-danger mb-2" style="font-size: 4em;">trending_up</i>
                     <p>Создания стратегии и стратегического управления</p>
                 </div>
                 <div class="col">
-                    <img src="img/icon.png" class="img-fluid mb-2">
+                    <i class="material-icons md-48 font-weight-bold text-danger mb-2" style="font-size: 4em;">business_center</i>
                     <p>Построения системы управления бизнес-процессами</p>
                 </div>
                 <div class="col">
-                    <img src="img/icon.png" class="img-fluid mb-2">
+                    <i class="material-icons md-48 font-weight-bold text-danger mb-2" style="font-size: 4em;">mood</i>
                     <p>Совершенствования системы мотивации сотрудников компании</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <img src="img/icon.png" class="img-fluid mb-2">
+                    <i class="material-icons md-48 font-weight-bold text-danger mb-2" style="font-size: 4em;">school</i>
                     <p>Организации контроллинга, управления эффективностью</p>
                 </div>
                 <div class="col">
-                    <img src="img/icon.png" class="img-fluid mb-2">
+                    <i class="material-icons md-48 font-weight-bold text-danger mb-2" style="font-size: 4em;">star_border</i>
                     <p>Формирования профессиональной управленческой команды</p>
                 </div>
             </div>
@@ -120,34 +137,39 @@
                 </div>
             </div>
             <div class="row mt-4">
-                <div class="col-2">
-                    <img src="https://iteam.ru/landing/template/img/gambit.png" class="img-fluid">
-                </div>
-                <div class="col-10">
-                    <div class="card bg-light h-100">
+                <div class="col">
+                    <div class="card shadow-lg">
                         <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-accent">Налоговый гамбит. Как взаимодействовать с налоговой, чтобы не попасть в зону риска</h5>
-                            <p>Любая компания может попасть в зону налогового риска. Доначисления налоговиков могут разрушить бизнес, казавшийся нерушимым. Бабурина Ирина — эксперт по налоговой безопасности, расскажет на мастер-классе:</p>
-                            <ul>
-                                <li>как правильно выстроить отношения с налоговиками и не сообщать о себе лишней информации;</li>
-                                <li>как использовать примеры из судебной практики по налоговым спорам в своих интересах.</li>
-                            </ul>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="https://iteam.ru/landing/template/img/gambit.png" class="img-fluid">
+                                </div>
+                                <div class="col-10">
+                                    <h5 class="card-title font-weight-bold text-accent">Налоговый гамбит. Как взаимодействовать с налоговой, чтобы не попасть в зону риска</h5>
+                                    <p>Любая компания может попасть в зону налогового риска. Доначисления налоговиков могут разрушить бизнес, казавшийся нерушимым. Бабурина Ирина — эксперт по налоговой безопасности, расскажет на мастер-классе:</p>
+                                    <ul>
+                                        <li>как правильно выстроить отношения с налоговиками и не сообщать о себе лишней информации;</li>
+                                        <li>как использовать примеры из судебной практики по налоговым спорам в своих интересах.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row bg-dark my-5" style="background-image: url('img/bg_top.jpg');background-size: cover;">
+        <div class="row my-5" style="background-image: url('img/bg_3.jpg');background-size: cover;">
             <div class="col">
                 <div class="container my-5">
-                    <div class="row text-light text-center">
+                    <div class="row text-center">
                         <div class="col">
                             <h2>Уже решили?</h2>
-                            <h3>Готовая база знаний “Русский менеджмент”</h3>
+                            <h3>Готовая база знаний &laquo;Русский менеджмент&raquo;</h3>
                             <h3 class="mt-4">Специальная цена до 31.07.18</h3>
-                            <a class="btn btn-warning btn-lg font-weight-bold mt-3" href="#" role="button">СЧЕТЧИК (до 30 июля 2018 года)</a>
-                            <p><a class="btn btn-danger btn-lg font-weight-bold mt-4" href="#" role="button">СДЕЛАЙТЕ ЗАКАЗ ПРЯМО СЕЙЧАС</a></p>
+                            <div id="countdown2" class="my-4 font-weight-bold"></div>
+                            <p><a class="btn btn-danger btn-lg font-weight-bold" href="#" role="button">СДЕЛАЙТЕ ЗАКАЗ ПРЯМО СЕЙЧАС</a></p>
                         </div>
                     </div>
                 </div>
@@ -156,18 +178,18 @@
 
         <div class="row text-center mt-5">
             <div class="col">
-                <h2>База знаний - это лучшие инвестиции в развитие персонала</h2>
+                <h2>База знаний&nbsp;&mdash; это лучшие инвестиции в&nbsp;развитие персонала</h2>
             </div>
         </div>
         <div class="row mt-4 mb-5">
             <div class="col">
-                <table class="table table-striped table-bordered">
-                    <thead class="thead-dark">
+                <table class="table table-striped table-borderless table-responsive">
+                    <thead>
                         <tr>
                             <th scope="col"></th>
-                            <th scope="col">База знаний “Русский менеджмент”</th>
+                            <th scope="col" class="bg-success text-light">База знаний &laquo;Русский менеджмент&raquo;</th>
                             <th scope="col"></th>
-                            <th scope="col">Стандартный корпоративный тренинг</th>
+                            <th scope="col" class="bg-danger text-light">Стандартный корпоративный тренинг</th>
                             <th scope="col"></th>
                         </tr>
                     </thead>
@@ -175,44 +197,44 @@
                         <tr>
                             <td>Скольких сотрудников вы сможете обучить за те же деньги?</td>
                             <td>500+ человек. Всю компанию, без ограничений.</td>
-                            <td>V</td>
+                            <td><i class="material-icons md-48 font-weight-bold text-success">check</i></td>
                             <td>1 тренинг-день для команды не более 10 человек.</td>
-                            <td>X</td>
+                            <td><i class="material-icons md-48 font-weight-bold text-danger">clear</i></td>
                         </tr>
                         <tr>
                             <td>Вы можете сами выстроить систему обучения и развития?</td>
                             <td>Конечно. Для каждого сотрудника вы можете подобрать обучающий материал.</td>
-                            <td>V</td>
+                            <td><i class="material-icons md-48 font-weight-bold text-success">check</i></td>
                             <td>Система обучения одинаковая для всех, кто посещает тренинг.</td>
-                            <td>X</td>
+                            <td><i class="material-icons md-48 font-weight-bold text-danger">clear</i></td>
                         </tr>
                         <tr>
                             <td>Можно ли повторить материал и пройти тренинг заново?</td>
                             <td>Вы можете сколько угодно раз использовать мастер-классы для обучения новых сотрудников.</td>
-                            <td>V</td>
+                            <td><i class="material-icons md-48 font-weight-bold text-success">check</i></td>
                             <td>Тренинг проводится только один раз, чтобы повторить придется оплачивать снова.</td>
-                            <td>X</td>
+                            <td><i class="material-icons md-48 font-weight-bold text-danger">clear</i></td>
                         </tr>
                         <tr>
                             <td>Уровень экспертности тренера</td>
                             <td>Александр Кочнев - эксперт-практик  с опытом  работы в управленческом консалтинге более 15 лет.</td>
-                            <td>V</td>
+                            <td><i class="material-icons md-48 font-weight-bold text-success">check</i></td>
                             <td>Приглашенный тренер чаще всего является специалистом только по обучению персонала. Не является экспертом в предметной области.</td>
-                            <td>X</td>
+                            <td><i class="material-icons md-48 font-weight-bold text-danger">clear</i></td>
                         </tr>
                         <tr>
                             <td>Удобство обучения</td>
                             <td>Вы обучаете персонал так, как хотите, когда и где угодно: в офисе, даете задание на дом, делаете выездную тренинг-сессию.</td>
-                            <td>V</td>
+                            <td><i class="material-icons md-48 font-weight-bold text-success">check</i></td>
                             <td>Формат и время обучение стандартное и согласовывается с тренером.</td>
-                            <td>X</td>
+                            <td><i class="material-icons md-48 font-weight-bold text-danger">clear</i></td>
                         </tr>
                         <tr>
                             <td>Результат обучения</td>
                             <td>Вы можете сколько угодно повторять материал до тех пор, пока не получите результат.</td>
-                            <td>V</td>
+                            <td><i class="material-icons md-48 font-weight-bold text-success">check</i></td>
                             <td>Результат не всегда измерим и очевиден. Повторить тренинг для закрепления нельзя.</td>
-                            <td>X</td>
+                            <td><i class="material-icons md-48 font-weight-bold text-danger">clear</i></td>
                         </tr>
                     </tbody>
                 </table>
@@ -221,17 +243,26 @@
 
         <div class="container my-5">
             <div class="row">
-                <div class="col-3">
-                    <img src="https://iteam.ru/landing/template/img/kochnev.jpg" class="img-fluid rounded">
-                </div>
-                <div class="col-9">
-                    <div class="card h-100 bg-light">
+                <div class="col">
+                    <div class="card shadow-lg">
                         <div class="card-body">
-                            <h5 class="font-weight-bold">Александр Кочнев</h5>
-                            <p>Лучший, по мнению многих, специалист по управлению компанией</p>
-                            <p>Управляющий партнер консалтинговой компании iTeam, кандидат технических наук, член Российской ассоциации управления проектами.</p>
-                            <p>Опыт работы в управленческом консалтинге более 15 лет. Руководитель многих консалтинговых проектов в компаниях различных отраслей: заводы, торговые сети, банки, предприятия сферы услуг, многопрофильные холдинги, государственные учреждения регионального и федерального уровня.</p>
-                            <a href="#"><h5>Индивидуальная программа обучения и развития для ваших сотрудников</h5></a>
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="https://iteam.ru/landing/template/img/kochnev.jpg" class="img-fluid rounded">
+                                </div>
+                                <div class="col-9">
+                                    <h5 class="font-weight-bold">Александр Кочнев</h5>
+                                    <p>Лучший, по мнению многих, специалист по управлению компанией</p>
+                                    <p>Управляющий партнер консалтинговой компании iTeam, кандидат технических наук, член Российской ассоциации управления проектами.</p>
+                                    <p>Опыт работы в управленческом консалтинге более 15 лет. Руководитель многих консалтинговых проектов в компаниях различных отраслей: заводы, торговые сети, банки, предприятия сферы услуг, многопрофильные холдинги, государственные учреждения регионального и федерального уровня.</p>
+                                    <a href="#" data-toggle="collapse" href="#collapseExample" data-target="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><h5>Индивидуальная программа обучения и развития для ваших сотрудников</h5></a>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card card-body mt-3">
+                                            Дополнительно к&nbsp;комплекту база знаний &laquo;Русский менеджмент&raquo; вы&nbsp;можете заказать консультацию Александра Кочнева по&nbsp;внедрению обучающей видеотеки и&nbsp;разработке индивидуальной системы обучения и&nbsp;развития для ваших сотрудников.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -246,8 +277,8 @@
                             <h2>Летний безлимит 2018</h2>
                             <h3>Готовая база знаний “Русский менеджмент”</h3>
                             <h3 class="mt-4">Специальная цена до 31.07.18</h3>
-                            <a class="btn btn-warning btn-lg font-weight-bold mt-3" href="#" role="button">СЧЕТЧИК (до 30 июля 2018 года)</a>
-                            <p><a class="btn btn-danger btn-lg font-weight-bold mt-4" href="#" role="button">СДЕЛАТЬ ЗАКАЗ</a></p>
+                            <div id="countdown3" class="my-4 font-weight-bold"></div>
+                            <p><a class="btn btn-danger btn-lg font-weight-bold" href="#" role="button">СДЕЛАТЬ ЗАКАЗ</a></p>
                         </div>
                     </div>
                 </div>
@@ -267,19 +298,18 @@
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Какие методы оплаты доступны?</a>
-                                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Оплата на&nbsp;вашем сайте безопасна?</a>
+                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">На какое время дается доступ к корпоративной библиотеке?</a>
+                                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Возможна ли оплата в рассрочку?</a>
                                     <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Вы&nbsp;принимаете карты стран СНГ?</a>
                                     </div>
                                 </div>
                                 <div class="col-sm-8">
                                     <div class="tab-content" id="v-pills-tabContent">
                                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                        <p>Мы&nbsp;осуществляем оплату с&nbsp;помощью платежного сервиса WalletOne. Вы&nbsp;можете оплатить продукт практически любым доступным сегодня способом. Все способы вы&nbsp;можете <a href="https://www.walletone.com/ru/merchant/payments/#country=RU&amp;section=cash" target="_blank">увидеть здесь.</a></p>
+                                        <p>Доступ бессрочный. Вы оплачиваете доступ только один раз и используете материалы постоянно.</p>
                                     </div>
                                     <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                        <p>Wallet One использует стандарт безопасности PCI&nbsp;DSS, SSL-протокол, системы безопасности Verified by&nbsp;Visa и&nbsp;MasterCard SecureCode.</p>
-                                        <p><a href="https://www.walletone.com/ru/merchant/security/" target="_blank">Подробнее здесь</a></p>
+                                        <p>Оплата в рассрочку возможна на индивидуальных условиях. Напишите нам на <a href="mailto:info@iteam.ru">info@iteam.ru</a></p>
                                     </div>
                                     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                                         <p>Да, мы&nbsp;принимаем карты, выпущенные на&nbsp;территории Украины, Беларуси, Казахстана и&nbsp;ряда других стран. Список всех стран и&nbsp;вариантов оплаты можно <a href="https://www.walletone.com/ru/merchant/payments/#country=RU&amp;section=cash" target="_blank">увидеть по&nbsp;ссылке</a></p>
@@ -342,18 +372,48 @@
                 <div class="col">
                     <div class="card my-1">
                         <div class="card-body">
-                            <blockquote class="blockquote">
-                                <p class="mb-2">Вашу компанию я считаю одной из самых сильных на рынке консалтинговых услуг в нашей стране. Мне нравится, что вы затрагиваете широкий диапазон управленческих проблем и освещаете их достаточно качественно и глубоко. В публикациях вашей компании я нахожу для себя много полезного, поскольку всегда интересно знакомиться с опытом профессионалов, учиться у них.</p>
-                                <footer class="blockquote-footer">С пожеланиями успехов и процветания, Борисюк Юрий Александрович Консультант по управлению, Доктор технических наук</footer>
-                            </blockquote>
+                            <p class="mb-2">Вашу компанию я считаю одной из самых сильных на рынке консалтинговых услуг в нашей стране. Мне нравится, что вы затрагиваете широкий диапазон управленческих проблем и освещаете их достаточно качественно и глубоко. В публикациях вашей компании я нахожу для себя много полезного, поскольку всегда интересно знакомиться с опытом профессионалов, учиться у них.</p>
+                            <footer class="blockquote-footer">С пожеланиями успехов и процветания, Борисюк Юрий Александрович Консультант по управлению, Доктор технических наук</footer>
                         </div>
                     </div>
                     <div class="card my-1">
                         <div class="card-body">
-                            <blockquote class="blockquote">
-                                <p class="mb-2">Мне очень нравится цикл мастер-классов, которые Вы ведете. Лично я, ранее являясь руководителем фабрики, начал менять свои подходы к управлению, в т.ч. благодаря информации получаемой от Вас. Она как-то отзывалась с тем, что я делал и наблюдал на фабрике. С тех пор у меня зародилась мысль как же малоэффективна промышленная способность России и как огромен потенциал и как это можно реализовать. Лично знакомясь с проблемами разных предприятий (иногда друзья приглашают как эксперта) я вижу, как многое можно сделать, как увеличить и результативность и эффективность.</p>
-                                <footer class="blockquote-footer">Дрягин Олег Борисович</footer>
-                            </blockquote>
+                            <p class="mb-2">Мне очень нравится цикл мастер-классов, которые Вы ведете. Лично я, ранее являясь руководителем фабрики, начал менять свои подходы к управлению, в т.ч. благодаря информации получаемой от Вас. Она как-то отзывалась с тем, что я делал и наблюдал на фабрике. С тех пор у меня зародилась мысль как же малоэффективна промышленная способность России и как огромен потенциал и как это можно реализовать. Лично знакомясь с проблемами разных предприятий (иногда друзья приглашают как эксперта) я вижу, как многое можно сделать, как увеличить и результативность и эффективность.</p>
+                            <footer class="blockquote-footer">Дрягин Олег Борисович</footer>
+                        </div>
+                    </div>
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <p class="mb-2">Да, мне нравятся Ваши мастер-классы, очень системный подход, владение материалом на высоком уровне и, безусловно, чувствуется большой практический опыт в тех вопросах, которые рассматриваются. Что касается нового. Т.к. бизнес-процессы для меня тема известная, то абсолютно новое найти, наверное, очень сложно. Меня привлекает то, что профессионализм и высокий уровень профессионального владения предметом у Александра, позволяет мне по другому посмотреть на уже знакомые вещи. С моей точки зрения, это очень важно, и нужно, на известные тебе вещи взглянуть по новому, т.к. в процессе операционной работы очень часто глаз "замыливается" и ты перестаешь видеть, на самом деле, очевидные вещи.</p>
+                            <footer class="blockquote-footer">Удачного дня, Елена Федаш, Директор по персоналу, Корпорация "АТБ", г.Днепропетровск.</footer>
+                        </div>
+                    </div>
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <p class="mb-2">
+                                    Понравилось:
+                                    <ol>
+                                        <li>Практическая ориентация информации;</li>
+                                        <li>Структурирование и прозрачность мастер-класса;</li>
+                                        <li>Освещение тем, которые не затрагиваются в классических схемах обучения;</li>
+                                        <li>Виден опыт лектора в исполнении того, о чем идет речь;</li>
+                                        <li>Доступность данного материала;</li>
+                                    </ol>
+                                    В ближайшее время планирую структурировать текущие бизнес процессы в своей организации.                                    
+                            </p>
+                            <footer class="blockquote-footer">С уважением, Григорий Барановский</footer>
+                        </div>
+                    </div>
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <p class="mb-2">При всей компактности излагаемого материала, наличие самого необходимого, и самое главное даётся рабочий инструмент на примерах. Не многие учебные программы  отличаются этим. Я уже посмотрел несколько мастер-классов А. Кочнева, и могу сказать, что материал хорошо структурирован, излагается доступно и внятно. Большое спасибо. Я рекомендовал эти мастер-классы своим сотрудникам.</p>
+                            <footer class="blockquote-footer">Бородавкин А.В.</footer>
+                        </div>
+                    </div>
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <p class="mb-2">Александр, большое спасибо за новые знания. Моя сфера деятельности - образование, но, проецируя с бизнес-разговора по теме на свою отрасль, получила неоценимую помощь. Многое упорядочилось, еще больше открылось. Еще раз огромное спасибо. С нетерпением буду ждать дальнейшего обучения. Подписалась на Ваш твиттер, фэйсбук, видеоканал. Посмотрю все видеозаписи. Думаю, пригодятся в решении проблем тех проектов, которыми занимаюсь.Удачи Вам.</p>
+                            <footer class="blockquote-footer">Елена Гончарова</footer>
                         </div>
                     </div>
                 </div>
@@ -401,6 +461,32 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+
+    <script>
+        var countDownDate = new Date("Jul 31, 2018 10:59:59").getTime();
+
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            var content = "<span class='badge badge-warning countdown'>" + days + "&nbsp;д" + "</span>" 
+                + "<span class='lead font-weight-bold'><strong>&nbsp;:&nbsp;</strong></span>" + "<span class='badge badge-warning countdown'>" + hours + "&nbsp;ч" + "</span>" 
+                + "<span class='lead font-weight-bold'><strong>&nbsp;:&nbsp;</strong></span>" + "<span class='badge badge-warning countdown'>" + minutes + "&nbsp;м" + "</span>" 
+                + "<span class='lead font-weight-bold'><strong>&nbsp;:&nbsp;</strong></span>" + "<span class='badge badge-warning countdown'>" + seconds + "&nbsp;с" + "</span>";
+            document.getElementById("countdown1").innerHTML = content;
+            document.getElementById("countdown2").innerHTML = content;
+            document.getElementById("countdown3").innerHTML = content;
+
+            if (distance < 0) {
+                clearInterval(x);
+            }
+        }, 1000);
+    </script>
 </body>
 
 </html>
